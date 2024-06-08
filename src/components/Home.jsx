@@ -8,8 +8,8 @@ function Home() {
   return (
     <div id="Home" className='min-h-[90vh] w-full bg-[#F9F9F9] mt-10 flex flex-col lg:flex-row justify-between  gap-5 lg:px-40 lg:pt-44  '>
 
-      <div className=' h-full lg:w-[50%] flex justify-center items-center'>
-        <img className='object-cover rounded-full mt-20 lg:m-0 lg:h-96 lg:w-96 h-80 w-80' src={img} alt="" />
+      <div className='h-full lg:w-[50%] flex justify-center items-center'>
+        <img className=' animate-blob object-cover rounded-full mt-20 lg:m-0 lg:h-96 lg:w-96 h-80 w-80 ' src={img} alt="" />
       </div>
 
       <div className='p-10 lg:w-[60%] flex flex-col justify-center  '>
