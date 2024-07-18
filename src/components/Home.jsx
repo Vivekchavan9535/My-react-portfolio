@@ -1,30 +1,42 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { CiLinkedin } from 'react-icons/ci'
 import { FiGithub } from 'react-icons/fi'
 import img from '../assets/vc-img.png'
 import { IoLogoInstagram } from 'react-icons/io5'
+import AOS from 'aos'
+import "aos/dist/aos.css"
+
+
 
 function Home() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1200 })
+  })
+
+
+
   return (
     <div id="Home" className='min-h-[90vh] w-full bg-[#F9F9F9] mt-10 flex flex-col lg:flex-row justify-between  gap-5 lg:px-40 lg:pt-44  '>
 
       <div className='h-full lg:w-[50%] flex justify-center items-center'>
-        <img className=' animate-blob object-cover rounded-full mt-20 lg:m-0 lg:h-96 lg:w-96 h-80 w-80 ' src={img} alt="" />
+
+        <img data-aos="zoom-in"  className=' animate-blob object-cover rounded-full mt-20 lg:m-0 lg:h-96 lg:w-96 h-80 w-80 ' src={img} alt="" />
       </div>
 
       <div className='p-10 lg:w-[60%] flex flex-col justify-center  '>
-        <h1 className='text-4xl lg:text-6xl font-bold'>Front-End React Developer</h1>
-        <p className='py-5 font-semibold'>Hi, I'm Vivek Chavan. A passionate Front-end React Developer based in Kalaburgi , Karnataka 📍</p>
+        <h1 data-aos="fade-down" className='text-4xl lg:text-6xl font-bold '>Front-End React Developer</h1>
+        <p data-aos="fade-down" data-aos-delay="300" className='py-5 font-semibold'>Hi, I'm Vivek Chavan. A passionate Front-end React Developer based in Kalaburgi , Karnataka 📍</p>
 
         <div className='flex gap-2 text-4xl lg:justify-normal justify-center items-center py-5'>
 
-          <a href="https://www.linkedin.com/in/vivek-chavan26/" target='_blank'><CiLinkedin /></a>
-          <a href="https://github.com/Vivekchavan9535" target='_blank'><FiGithub /></a>
-          <a href="https://www.instagram.com/its_vivek_chavann/" target='_blank'><IoLogoInstagram /></a>
+          <a data-aos="fade-down" data-aos-delay="500" href="https://www.linkedin.com/in/vivek-chavan26/" target='_blank'><CiLinkedin /></a>
+          <a data-aos="fade-down" data-aos-delay="600" href="https://github.com/Vivekchavan9535" target='_blank'><FiGithub /></a>
+          <a data-aos="fade-down" data-aos-delay="700" href="https://www.instagram.com/its_vivek_chavann/" target='_blank'><IoLogoInstagram /></a>
 
         </div>
 
-        <div className=' flex flex-col lg:flex-row items-center lg:pt-22 h-full w-full gap-5'>
+        <div data-aos="zoom-in" data-aos-delay="700" className=' flex flex-col lg:flex-row items-center lg:pt-22 h-full w-full gap-5'>
 
           <h1 className='hidden lg:flex font-bold text-2xl shrink-0'>Tech Stack |  </h1>
 
