@@ -25,7 +25,7 @@ function Aboutme() {
         <h2 className=' lg:text-4xl text-2xl font-bold'>Front-end Developer based in Kalaburgi, Karnataka 📍</h2>
         <h4>Hey, my name is Vivek Chavan, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.</h4>
 
-        <h5>My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.</h5>
+        <h5>My main stack currently is React/Next.js in combination with Tailwind CSS.</h5>
       </div>
 
 
